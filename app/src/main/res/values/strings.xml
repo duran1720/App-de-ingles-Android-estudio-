@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">My Application Duran</string>
+    <string name="titulo">Bienvenidos a mi APP</string>
+    <string name="tituloboton">siguiente</string>
+    <string name="tituloprincipal">Mi App Ingles ></string>
+    <string name="menu">Menú</string>
+    <string name="colores">Colores</string>
+    <string name="animales">Animales</string>
+    <string name="frutas">Frutas</string>
+    <string name="numeros">Números</string>
+    <string name="leon">León</string>
+    <string name="cebra">Cebra</string>
+    <string name="elefante">Elefante</string>
+    <string name="amarillo">Amarillo</string>
+    <string name="azul">Azul</string>
+    <string name="rojo">Rojo</string>
+    <string name="manzana">Manzana</string>
+    <string name="sandia">Sandía</string>
+    <string name="uva">Uva</string>
+    <string name="uno">1</string>
+    <string name="dos">2</string>
+    <string name="tres">3</string>
+    <string name="cuatro">4</string>
+    <string name="cinco">5</string>
+    <string name="seis">6</string>
+    <string name="siete">7</string>
+    <string name="ocho">8</string>
+    <string name="nueve">9</string>
+    <string name="diez">10</string>
+
+
+
+</resources>

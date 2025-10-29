@@ -1,0 +1,19 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Degradado de fondo -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#9123B5"
+                android:endColor="#FF466B"
+                android:angle="225" />
+        </shape>
+    </item>
+
+    <!-- Capa translúcida para efecto difuso -->                android:centerColor="#C7257E"
+
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#33FFFFFF"/>
+        </shape>
+    </item>
+</layer-list>
