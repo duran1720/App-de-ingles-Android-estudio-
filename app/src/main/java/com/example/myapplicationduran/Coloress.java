@@ -1,28 +1,30 @@
 package com.example.myapplicationduran;
 
-import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 
 import androidx.activity.EdgeToEdge;
-import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class MainActivity extends AppCompatActivity {
+public class Coloress extends AppCompatActivity {
 
+    MediaPlayer sonido;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
 
-    }
-    public void irmenu(View View){
-    Intent siguiente = new Intent(MainActivity.this,MenuApp.class);
-    startActivity(siguiente);
+        setContentView(R.layout.activity_colores);
+
 
 
     }
+
+    public void aublue (View view){
+        sonido = MediaPlayer.create(Coloress.this,R.raw.blue);
+        sonido.start();
+    }9
 }

@@ -5,71 +5,149 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Animales"
-    android:background="@drawable/bg_blur_red_purple">
+    android:orientation="vertical"
+    android:background="@drawable/bg_blur_red_purple"
 
-    <TextView
-        android:layout_width="130dp"
-        android:layout_height="66dp"
-        android:layout_marginLeft="140dp"
+    android:padding="16dp">
 
-        android:fontFamily="sans-serif-medium"
-        android:gravity="center"
-        android:orientation="vertical"
-        android:text="@string/animales"
-        android:textColor="@android:color/black"
-        android:textSize="30sp"
-        android:textStyle="bold"/>
+    <!-- Título principal -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginLeft="-210dp"
-        android:src="@drawable/leon"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/leon"
-        android:textColor="@color/black"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        android:layout_marginTop="120dp"
-        android:layout_marginLeft="100dp"/>
+        <TextView
 
-    <ImageView
-        android:layout_width="150dp"
-        android:layout_height="100dp"
-        android:layout_marginLeft="-280dp"
-        android:layout_marginTop="350dp"
-        android:src="@drawable/cebra" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/animales"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif-medium"
+            android:paddingTop="16dp"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/cebra"
-        android:textColor="@color/black"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        android:layout_marginTop="350dp"
-        android:layout_marginLeft="60dp"/>
+        <!-- Espacio reservado para el icono de configuraciones -->
+        <ImageView
+            android:id="@+id/btnConfiguracion"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/opciones"
+            />
+    </RelativeLayout>
 
-    <ImageView
-        android:layout_width="150dp"
-        android:layout_height="100dp"
-        android:layout_marginLeft="-280dp"
-        android:layout_marginTop="580dp"
-        android:src="@drawable/elefante" />
+    <!-- Contenedor general para las imágenes y textos -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/elefante"
-        android:textColor="@color/black"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        android:layout_marginTop="600dp"
-        android:layout_marginLeft="60dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
 
 
+            >
+
+            <!-- 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/rounded_card">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+
+                    android:src="@drawable/leon"
+                    android:layout_marginEnd="16dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/leon"
+                    android:textColor="@android:color/black"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="30dp"/>
+                <ImageButton
+                    android:onClick="aulion"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/play"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="30dp"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="100dp"
+                android:background="@drawable/rounded_card">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/cebra"
+                    android:layout_marginEnd="16dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cebra"
+                    android:textColor="@android:color/black"
+                    android:textSize="22sp"
+                    android:layout_marginTop="40dp"
+                    android:textStyle="bold"/>
+                <ImageButton
+                    android:onClick="auzebra"
+                    android:layout_width="40px"
+                    android:layout_height="40px"
+                    android:src="@drawable/play"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginLeft="100dp"/>
+            </LinearLayout>
+
+            <!-- 4 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="100dp"
+                android:background="@drawable/rounded_card">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/elefante"
+                    android:layout_marginEnd="16dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/elefante"
+                    android:textColor="@android:color/black"
+                    android:textSize="22sp"
+                    android:layout_marginTop="35dp"
+                    android:textStyle="bold"/>
+                <ImageButton
+                    android:onClick="auelefant"
+                    android:layout_width="40px"
+                    android:layout_height="40px"
+                    android:src="@drawable/play"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginLeft="90dp"/>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

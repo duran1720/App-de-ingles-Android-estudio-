@@ -1,6 +1,8 @@
 package com.example.myapplicationduran;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,13 +15,7 @@ public class MenuApp extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_menu_app);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
     }
 
     public static class Colores extends AppCompatActivity {
@@ -27,13 +23,24 @@ public class MenuApp extends AppCompatActivity {
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
-            EdgeToEdge.enable(this);
             setContentView(R.layout.activity_colores);
-            ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-                Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-                v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-                return insets;
-            });
+
         }
+    }
+    public void iranimales(View View){
+        Intent animales= new Intent(MenuApp.this,Animales.class);
+        startActivity(animales);
+    }
+    public void ircolores(View View){
+        Intent colores= new Intent(MenuApp.this,Coloress.class);
+        startActivity(colores);
+    }
+    public void irfrutas(View View){
+        Intent frutas= new Intent(MenuApp.this,Frutas.class);
+        startActivity(frutas);
+    }
+    public void irnumeros(View View){
+        Intent numeros= new Intent(MenuApp.this,Numeros.class);
+        startActivity(numeros);
     }
 }

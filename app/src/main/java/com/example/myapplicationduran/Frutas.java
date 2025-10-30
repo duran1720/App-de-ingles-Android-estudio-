@@ -1,6 +1,8 @@
 package com.example.myapplicationduran;
 
+import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,16 +11,25 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class Frutas extends AppCompatActivity {
+    private MediaPlayer au_apple,au_watermelon,au_grape;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_frutas);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
+        au_apple=MediaPlayer.create(Frutas.this,R.raw.apple);
+        au_watermelon=MediaPlayer.create(Frutas.this,R.raw.watermelon);
+        au_grape=MediaPlayer.create(Frutas.this,R.raw.grape);
+
+
+    }
+    public void au_apple (View View){
+        au_apple.start();
+    }
+    public void au_watermelon (View View){
+        au_watermelon.start();
+    }
+    public void au_grape (View View){
+        au_grape.start();
     }
 }

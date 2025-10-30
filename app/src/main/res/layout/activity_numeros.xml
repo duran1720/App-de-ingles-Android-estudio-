@@ -19,7 +19,7 @@
 
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/numeros"
+            android:text="@string/colores"
             android:textColor="@android:color/black"
             android:textSize="30sp"
             android:textStyle="bold"
@@ -35,7 +35,7 @@
             android:layout_alignParentEnd="true"
             android:layout_marginTop="10dp"
             android:src="@drawable/opciones"
-           />
+            />
     </RelativeLayout>
 
     <!-- Contenedor general para las imágenes y textos -->
@@ -47,18 +47,23 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+
+
+            >
 
             <!-- 1 -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_marginTop="16dp">
+                android:layout_marginTop="16dp"
+                android:background="@drawable/rounded_card">
 
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
+
                     android:src="@drawable/uno"
                     android:layout_marginEnd="16dp"/>
 
@@ -68,15 +73,24 @@
                     android:text="@string/uno"
                     android:textColor="@android:color/black"
                     android:textSize="22sp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold"
+                    android:layout_marginTop="30dp"/>
+                <ImageButton
+                    android:onClick="au_one"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/play"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="30dp"/>
             </LinearLayout>
 
-            <!-- 2 -->
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_marginTop="16dp">
+                android:layout_marginTop="100dp"
+                android:background="@drawable/rounded_card">
 
                 <ImageView
                     android:layout_width="100dp"
@@ -90,15 +104,24 @@
                     android:text="@string/dos"
                     android:textColor="@android:color/black"
                     android:textSize="22sp"
+                    android:layout_marginTop="40dp"
                     android:textStyle="bold"/>
+                <ImageButton
+                    android:onClick="au_two"
+                    android:layout_width="40px"
+                    android:layout_height="40px"
+                    android:src="@drawable/play"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginLeft="100dp"/>
             </LinearLayout>
 
-            <!-- 3 -->
+            <!-- 4 -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_marginTop="16dp">
+                android:layout_marginTop="100dp"
+                android:background="@drawable/rounded_card">
 
                 <ImageView
                     android:layout_width="100dp"
@@ -112,15 +135,22 @@
                     android:text="@string/tres"
                     android:textColor="@android:color/black"
                     android:textSize="22sp"
+                    android:layout_marginTop="35dp"
                     android:textStyle="bold"/>
+                <ImageButton
+                    android:onClick="au_three"
+                    android:layout_width="40px"
+                    android:layout_height="40px"
+                    android:src="@drawable/play"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginLeft="90dp"/>
             </LinearLayout>
-
-            <!-- 4 -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_marginTop="16dp">
+                android:layout_marginTop="100dp"
+                android:background="@drawable/rounded_card">
 
                 <ImageView
                     android:layout_width="100dp"
@@ -134,15 +164,22 @@
                     android:text="@string/cuatro"
                     android:textColor="@android:color/black"
                     android:textSize="22sp"
+                    android:layout_marginTop="35dp"
                     android:textStyle="bold"/>
+                <ImageButton
+                    android:onClick="au_four"
+                    android:layout_width="40px"
+                    android:layout_height="40px"
+                    android:src="@drawable/play"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginLeft="90dp"/>
             </LinearLayout>
-
-            <!-- 5 -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_marginTop="16dp">
+                android:layout_marginTop="100dp"
+                android:background="@drawable/rounded_card">
 
                 <ImageView
                     android:layout_width="100dp"
@@ -156,15 +193,22 @@
                     android:text="@string/cinco"
                     android:textColor="@android:color/black"
                     android:textSize="22sp"
+                    android:layout_marginTop="35dp"
                     android:textStyle="bold"/>
+                <ImageButton
+                    android:onClick="au_five"
+                    android:layout_width="40px"
+                    android:layout_height="40px"
+                    android:src="@drawable/play"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginLeft="90dp"/>
             </LinearLayout>
-
-            <!-- 6 -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_marginTop="16dp">
+                android:layout_marginTop="100dp"
+                android:background="@drawable/rounded_card">
 
                 <ImageView
                     android:layout_width="100dp"
@@ -178,15 +222,22 @@
                     android:text="@string/seis"
                     android:textColor="@android:color/black"
                     android:textSize="22sp"
+                    android:layout_marginTop="35dp"
                     android:textStyle="bold"/>
+                <ImageButton
+                    android:onClick="au_six"
+                    android:layout_width="40px"
+                    android:layout_height="40px"
+                    android:src="@drawable/play"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginLeft="90dp"/>
             </LinearLayout>
-
-            <!-- 7 -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_marginTop="16dp">
+                android:layout_marginTop="100dp"
+                android:background="@drawable/rounded_card">
 
                 <ImageView
                     android:layout_width="100dp"
@@ -200,15 +251,22 @@
                     android:text="@string/siete"
                     android:textColor="@android:color/black"
                     android:textSize="22sp"
+                    android:layout_marginTop="35dp"
                     android:textStyle="bold"/>
+                <ImageButton
+                    android:onClick="au_seven"
+                    android:layout_width="40px"
+                    android:layout_height="40px"
+                    android:src="@drawable/play"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginLeft="90dp"/>
             </LinearLayout>
-
-            <!-- 8 -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_marginTop="16dp">
+                android:layout_marginTop="100dp"
+                android:background="@drawable/rounded_card">
 
                 <ImageView
                     android:layout_width="100dp"
@@ -222,15 +280,22 @@
                     android:text="@string/ocho"
                     android:textColor="@android:color/black"
                     android:textSize="22sp"
+                    android:layout_marginTop="35dp"
                     android:textStyle="bold"/>
+                <ImageButton
+                    android:onClick="au_eight"
+                    android:layout_width="40px"
+                    android:layout_height="40px"
+                    android:src="@drawable/play"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginLeft="90dp"/>
             </LinearLayout>
-
-            <!-- 9 -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_marginTop="16dp">
+                android:layout_marginTop="100dp"
+                android:background="@drawable/rounded_card">
 
                 <ImageView
                     android:layout_width="100dp"
@@ -244,16 +309,22 @@
                     android:text="@string/nueve"
                     android:textColor="@android:color/black"
                     android:textSize="22sp"
+                    android:layout_marginTop="35dp"
                     android:textStyle="bold"/>
+                <ImageButton
+                    android:onClick="au_nine"
+                    android:layout_width="40px"
+                    android:layout_height="40px"
+                    android:src="@drawable/play"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginLeft="90dp"/>
             </LinearLayout>
-
-            <!-- 10 -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_marginTop="16dp"
-                android:layout_marginBottom="32dp">
+                android:layout_marginTop="100dp"
+                android:background="@drawable/rounded_card">
 
                 <ImageView
                     android:layout_width="100dp"
@@ -267,8 +338,18 @@
                     android:text="@string/diez"
                     android:textColor="@android:color/black"
                     android:textSize="22sp"
+                    android:layout_marginTop="35dp"
                     android:textStyle="bold"/>
+                <ImageButton
+                    android:onClick="au_ten"
+                    android:layout_width="40px"
+                    android:layout_height="40px"
+                    android:src="@drawable/play"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginLeft="90dp"/>
             </LinearLayout>
+
+
 
         </LinearLayout>
     </ScrollView>

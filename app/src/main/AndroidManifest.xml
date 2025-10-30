@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplicationDuran">
         <activity
+            android:name=".Coloress"
+            android:exported="false" />
+        <activity
             android:name=".Numeros"
             android:exported="false" />
         <activity
