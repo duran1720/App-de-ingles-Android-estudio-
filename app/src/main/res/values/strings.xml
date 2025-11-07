@@ -3,7 +3,7 @@
     <string name="titulo">Bienvenidos a mi APP</string>
     <string name="tituloboton">siguiente</string>
     <string name="tituloprincipal">Mi App Ingles </string>
-    <string name="menu">Menú</string>
+    <string name="menuaprender">Menú Aprender</string>
     <string name="colores">Colores</string>
     <string name="animales">Animales</string>
     <string name="frutas">Frutas</string>
@@ -27,6 +27,12 @@
     <string name="ocho">8</string>
     <string name="nueve">9</string>
     <string name="diez">10</string>
+    <string name="menuapp">Menú</string>
+    <string name="aprender">Aprender</string>
+    <string name="jugar">Jugar</string>
+    <string name="pregunta">PREGUNTA ▶️</string>
+    <string name="incorrecto">INCORRECTO ❌</string>
+    <string name="textIncorrecto">Intentalo de nuevo tu puedes ☺️ </string>
 
 
 </resources>

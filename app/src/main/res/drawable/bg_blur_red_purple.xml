@@ -9,7 +9,7 @@
         </shape>
     </item>
 
-    <!-- Capa translúcida para efecto difuso -->                android:centerColor="#C7257E"
+    <!-- Capa translúcida para efecto difuso -->
 
     <item>
         <shape android:shape="rectangle">

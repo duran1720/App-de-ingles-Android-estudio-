@@ -3,102 +3,119 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MenuApp"
-    android:background="@drawable/bg_blur_red_purple">
-    <ImageView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:src="@drawable/opciones"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="350dp"/>
+    android:orientation="vertical"
+    android:background="@drawable/bg_blur_red_purple"
 
-    <TextView
-        android:layout_width="80dp"
-        android:layout_height="66dp"
-        android:layout_marginLeft="170dp"
+    android:padding="16dp">
 
-        android:fontFamily="sans-serif-medium"
-        android:gravity="center"
-        android:orientation="vertical"
-        android:text="@string/menu"
-        android:textColor="@android:color/black"
-        android:textSize="30sp"
-        android:textStyle="bold" />
+    <!-- Título principal -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <ImageView
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:src="@drawable/animales"
-        android:contentDescription="@string/animales"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="180dp"
+        <TextView
 
-         />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menuapp"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif-medium"
+            android:paddingTop="16dp"
+            />
 
-    <Button
-        android:onClick="iranimales"
-        android:layout_width="120dp"
-        android:layout_height="wrap_content"
-        android:text="@string/animales"
+        <!-- Espacio reservado para el icono de configuraciones -->
+        <ImageView
+            android:id="@+id/btnConfiguracion"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/opciones"
+            />
+    </RelativeLayout>
 
-        android:layout_marginTop="4dp"
-        android:layout_marginLeft="160dp"
-        />
-    <ImageView
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:src="@drawable/colores"
-        android:contentDescription="@string/animales"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="180dp"
+    <!-- Contenedor general para las imágenes y textos -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp">
 
-        />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
 
 
-    <Button
-        android:onClick="ircolores"
-        android:layout_width="120dp"
-        android:layout_height="wrap_content"
-        android:text="@string/colores"
-        android:layout_marginTop="4dp"
-        android:layout_marginLeft="160dp"/>
-    <ImageView
-        android:layout_width="70dp"
-        android:layout_height="75dp"
-        android:src="@drawable/frutas"
-        android:contentDescription="@string/animales"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="180dp"
+            >
 
-        />
+            <!-- 1 -->
+            <LinearLayout
 
-    <Button
-        android:onClick="irfrutas"
-        android:layout_width="120dp"
-        android:layout_height="wrap_content"
-        android:text="@string/frutas"
-        android:layout_marginTop="4dp"
-        android:layout_marginLeft="160dp"/>
-    <ImageView
-        android:layout_width="70dp"
-        android:layout_height="75dp"
-        android:src="@drawable/numeros"
-        android:contentDescription="@string/animales"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="180dp"
+                android:onClick="irmenujugar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="90dp"
+                android:background="@drawable/rounded_card"
+                android:gravity="center"
+                >
 
-        />
+                <ImageView
+
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+
+                    android:src="@drawable/menujugar"
+                    android:layout_marginEnd="16dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/jugar"
+                    android:textColor="@android:color/black"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="30dp"/>
 
 
-    <Button
-        android:onClick="irnumeros"
-        android:layout_width="120dp"
-        android:layout_height="wrap_content"
-        android:text="@string/numeros"
-        android:layout_marginTop="4dp"
-        android:layout_marginLeft="160dp"/>
 
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginTop="100dp"
+                android:background="@drawable/rounded_card"
+                android:onClick="irmenuaprender">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/aprender"
+                    android:layout_marginEnd="16dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/aprender"
+                    android:textColor="@android:color/black"
+                    android:textSize="22sp"
+                    android:layout_marginTop="40dp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

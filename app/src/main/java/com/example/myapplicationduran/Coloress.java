@@ -26,5 +26,14 @@ public class Coloress extends AppCompatActivity {
     public void aublue (View view){
         sonido = MediaPlayer.create(Coloress.this,R.raw.blue);
         sonido.start();
-    }9
+    }
+    public void aured (View view){
+        sonido = MediaPlayer.create(Coloress.this,R.raw.red);
+        sonido.start();
+    }
+    public void auyellow (View view){
+        sonido = MediaPlayer.create(Coloress.this,R.raw.yellow);
+        sonido.start();
+    }
+
 }

@@ -12,6 +12,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplicationDuran">
         <activity
+            android:name=".preguntas_frutas"
+            android:exported="false" />
+
+        <activity
+            android:name=".preguntaAnimales"
+            android:exported="false" />
+        <activity
+            android:name=".aprender"
+            android:exported="false" />
+        <activity
+            android:name=".menu_app"
+            android:exported="false" />
+        <activity
             android:name=".Coloress"
             android:exported="false" />
         <activity
@@ -24,10 +37,10 @@
             android:name=".Animales"
             android:exported="false" />
         <activity
-            android:name=".MenuApp$Colores"
+            android:name=".MenuAprender$Colores"
             android:exported="false" />
         <activity
-            android:name=".MenuApp"
+            android:name=".MenuAprender"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
