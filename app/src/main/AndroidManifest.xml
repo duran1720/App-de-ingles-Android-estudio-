@@ -12,38 +12,55 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplicationDuran">
         <activity
-            android:name=".preguntas_frutas"
+            android:name=".controller.datosUser"
             android:exported="false" />
-
         <activity
-            android:name=".preguntaAnimales"
+            android:name=".controller.gameComplet"
+            android:exported="false" />
+        <activity
+            android:name=".controller.pregunta_numeros3"
+            android:exported="false" />
+        <activity
+            android:name=".controller.preguntas_numeros2"
+            android:exported="false" />
+        <activity
+            android:name=".controller.preguntas_numeros1"
+            android:exported="false" />
+        <activity
+            android:name=".controller.preguntas_colores"
+            android:exported="false" />
+        <activity
+            android:name=".controller.preguntas_frutas"
+            android:exported="false" />
+        <activity
+            android:name=".controller.preguntaAnimales"
             android:exported="false" />
         <activity
             android:name=".aprender"
             android:exported="false" />
         <activity
-            android:name=".menu_app"
+            android:name=".controller.menu_app"
             android:exported="false" />
         <activity
-            android:name=".Coloress"
+            android:name=".controller.Coloress"
             android:exported="false" />
         <activity
-            android:name=".Numeros"
+            android:name=".controller.Numeros"
             android:exported="false" />
         <activity
-            android:name=".Frutas"
+            android:name=".controller.Frutas"
             android:exported="false" />
         <activity
-            android:name=".Animales"
+            android:name=".controller.Animales"
             android:exported="false" />
         <activity
-            android:name=".MenuAprender$Colores"
+            android:name=".controller.MenuAprender$Colores"
             android:exported="false" />
         <activity
-            android:name=".MenuAprender"
+            android:name=".controller.MenuAprender"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".controller.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".controller.MainActivity"
     android:background="@drawable/bg_blur_red_purple">
 
     <!-- Texto de bienvenida -->
@@ -51,7 +51,7 @@
 
     <!-- Botón principal -->
     <Button
-        android:onClick="irmenu"
+        android:onClick="irdatos"
         android:id="@+id/btnStart"
         android:layout_width="250dp"
         android:layout_height="wrap_content"

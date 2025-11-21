@@ -1,10 +1,12 @@
-package com.example.myapplicationduran;
+package com.example.myapplicationduran.controller;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.myapplicationduran.R;
 
 public class MenuAprender extends AppCompatActivity {
 

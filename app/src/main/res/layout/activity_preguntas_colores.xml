@@ -13,19 +13,19 @@
 
 
 
-        <TextView
-            android:onClick="aupreguntaAnimales"
-            android:id="@+id/tvTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="56dp"
-            android:text="@string/pregunta"
-            android:textColor="@color/black"
-            android:textSize="26sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:onClick="aupreguntaAnimales"
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="@string/pregunta"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 
@@ -49,7 +49,7 @@
             android:layout_marginBottom="16dp">
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/btnPreguntaleon"
+                android:id="@+id/btnPreguntaamarillo"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_margin="8dp"
@@ -69,7 +69,7 @@
                     <ImageView
                         android:layout_width="64dp"
                         android:layout_height="64dp"
-                        android:src="@drawable/leon"
+                        android:src="@drawable/amarillo"
                         android:contentDescription="@string/animales"/>
 
 
@@ -77,7 +77,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/btnPreguntacebra"
+                android:id="@+id/btnPreguntarojo"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_margin="8dp"
@@ -97,7 +97,7 @@
                     <ImageView
                         android:layout_width="64dp"
                         android:layout_height="64dp"
-                        android:src="@drawable/cebra"
+                        android:src="@drawable/rojo"
                         android:contentDescription="@string/colores"/>
 
 
@@ -111,7 +111,7 @@
             android:gravity="center">
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/btnPreguntaelefante"
+                android:id="@+id/btnPreguntaazul"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_margin="8dp"
@@ -131,7 +131,7 @@
                     <ImageView
                         android:layout_width="64dp"
                         android:layout_height="64dp"
-                        android:src="@drawable/elefante"
+                        android:src="@drawable/azul"
                         android:contentDescription="@string/numeros"/>
 
 

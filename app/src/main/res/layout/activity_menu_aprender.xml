@@ -6,7 +6,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MenuAprender"
+    tools:context=".controller.MenuAprender"
     android:background="@drawable/bg_blur_red_purple">
     <ImageView
         android:layout_width="50dp"

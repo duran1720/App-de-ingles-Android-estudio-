@@ -1,14 +1,12 @@
-package com.example.myapplicationduran;
+package com.example.myapplicationduran.controller;
 
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+
+import com.example.myapplicationduran.R;
 
 public class Numeros extends AppCompatActivity {
     private MediaPlayer au_zero,au_one,au_two,au_three,au_four,au_five,au_six,au_seven,au_eight,au_nine,au_ten;

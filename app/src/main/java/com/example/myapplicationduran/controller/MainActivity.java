@@ -1,10 +1,12 @@
-package com.example.myapplicationduran;
+package com.example.myapplicationduran.controller;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.myapplicationduran.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -14,8 +16,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
     }
-    public void irmenu(View View){
-    Intent siguiente = new Intent(MainActivity.this, menu_app.class);
+    public void irdatos(View View){
+    Intent siguiente = new Intent(MainActivity.this, datosUser.class);
     startActivity(siguiente);
     }
 

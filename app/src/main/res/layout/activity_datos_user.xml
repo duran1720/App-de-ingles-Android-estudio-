@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_blur_red_purple"
+    android:padding="20dp">
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:gravity="center"
+android:orientation="vertical">
+
+<!-- Tarjeta estilo login -->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="25dp"
+    android:background="@drawable/rounded_card"
+    android:orientation="vertical"
+    android:elevation="8dp"
+    android:layout_marginTop="60dp">
+
+    <!-- Título -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Datos del Usuario"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:layout_gravity="center"
+        android:paddingBottom="20dp"/>
+
+    <!-- Campo Nombre -->
+    <EditText
+        android:id="@+id/txtNombre"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/rounded_card"
+        android:hint="Nombre"
+        android:padding="15dp"
+        android:textColor="#000"
+        android:textColorHint="#666" />
+
+    <!-- Campo Apodo -->
+    <EditText
+        android:id="@+id/txtApodo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rounded_card"
+        android:hint="Apodo"
+        android:padding="15dp"
+        android:textColor="#000"
+        android:textColorHint="#666" />
+
+    <!-- Campo Edad -->
+    <EditText
+        android:id="@+id/txtEdad"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:inputType="number"
+        android:background="@drawable/rounded_card"
+        android:hint="Edad"
+        android:padding="15dp"
+        android:textColor="#000"
+        android:textColorHint="#666" />
+
+    <!-- Campo Colegio -->
+    <Spinner
+        android:id="@+id/txtColegio"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rounded_card"
+        android:hint="Colegio"
+        android:padding="15dp"
+        android:textColor="#000"
+        android:textColorHint="#666"
+        android:entries="@array/colegios"/>
+    <TextView
+        android:layout_width="310dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="20dp"
+        android:text="GENERO"
+        android:layout_gravity="center"
+        android:textSize="19dp"
+        android:textColor="@color/black"/>
+
+
+    <!-- Selector de Género -->
+    <RadioGroup
+        android:id="@+id/spGenero"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rounded_card"
+        >
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:text="Masculino"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:text="Femenino"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            />
+    </RadioGroup>
+
+    <!-- Botón Guardar -->
+    <Button
+        android:onClick="irdatosmenu"
+        android:id="@+id/btnGuardar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/blue"
+        android:text="Guardar Datos"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+</LinearLayout>
+
+</LinearLayout>
+
+    </ScrollView>

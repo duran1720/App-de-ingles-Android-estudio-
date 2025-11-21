@@ -33,6 +33,13 @@
     <string name="pregunta">PREGUNTA ▶️</string>
     <string name="incorrecto">INCORRECTO ❌</string>
     <string name="textIncorrecto">Intentalo de nuevo tu puedes ☺️ </string>
+    <string name="inicio">inicio 🏠</string>
 
+    <string-array name="colegios">
+        <item>Colegio 1</item>
+        <item>Colegio 2</item>
+        <item>Colegio 3</item>
+        <item>Colegio 4</item>
+    </string-array>
 
 </resources>
